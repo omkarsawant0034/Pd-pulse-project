@@ -20,7 +20,10 @@ const Prediction = () => {
     formData.append("waveImage", waveImage);
 
     try {
-      const res = await axios.post("http://localhost:5000/predict", formData);
+      const res = await axios.post(
+        "https://pd-pulse-project-production.up.railway.app/predict",
+        formData
+      );
       setPrediction(res.data.prediction);
       setConfidence(res.data.confidence);
     } catch (err) {
@@ -79,15 +82,17 @@ const Prediction = () => {
         </form>
 
        {prediction && (
-  <div
-    className={`result-section ${prediction.toLowerCase().includes("parkinson") ? "result-red" : "result-green"}`}
-  >
-    <h3 className="result">🧠 Prediction: {prediction}</h3>
-    <p className="confidence">Confidence: <strong>{confidence}</strong></p>
-  </div>
-)}
-
-
+          <div
+            className={`result-section ${
+              prediction.toLowerCase().includes("parkinson")
+                ? "result-red"
+                : "result-green"
+            }`}
+          >
+            <h3 className="result">🧠 Prediction: {prediction}</h3>
+            <p className="confidence">Confidence: <strong>{confidence}</strong></p>
+          </div>
+        )}
       </div>
     </div>
   );
