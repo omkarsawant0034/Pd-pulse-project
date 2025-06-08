@@ -1,0 +1,39 @@
+/* 1. Reset everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* 2. Navbar fixed + styles */
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-image: url('/bg4.jpeg'); */
+  background: #095898;
+  backdrop-filter: blur(10px);
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  z-index: 9999;
+  height: 75px; /* fix navbar height */
+  display: flex;
+  align-items: center;
+}
+
+ .nav-item :hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  
+ }
+
+.nav-item button:hover {
+  background-color: rgb(255, 253, 253);
+  border-radius: 5px;
+}

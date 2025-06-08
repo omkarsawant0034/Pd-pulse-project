@@ -1,0 +1,63 @@
+/* Reset body margin */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  padding-top: 56px; /* same as navbar height */
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/bg4.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(15, 88, 134, 0.543);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 1;
+}
+
+
+.content {
+  max-width: 700px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+
+.content h1,
+.content p,
+.content a {
+  margin: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

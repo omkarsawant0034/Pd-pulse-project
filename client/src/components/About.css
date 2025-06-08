@@ -1,0 +1,84 @@
+.about-container {
+  background: linear-gradient(to right, #f0f8ff, #e2f0fb);
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.highlight {
+  color: #095898;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.about-cards{
+    margin-bottom: 100px;
+}
+
+.about-cards .info-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  border-top: 4px solid #095898;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.info-card h5 {
+  color: #095898;
+  font-weight: 600;
+}
+
+.mission-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid #095898;
+  margin-top: 30px;
+}
+
+.cnn-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+
+.tech-stack{
+    margin-bottom: 50px;;
+}
+.tech-stack .icon-img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
