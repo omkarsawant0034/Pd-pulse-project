@@ -1,6 +1,8 @@
 Flask
-gunicorn
-tensorflow==<your-version>
+flask-cors
+tensorflow
+pillow
 numpy
-Pillow
+gunicorn
+gdown
 requests
