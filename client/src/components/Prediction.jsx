@@ -59,7 +59,7 @@ const Prediction = () => {
               <p><strong>2.</strong> Draw a Spiral and Wave pattern.</p>
             </div>
             <div className="step fade-in delay-2">
-              <img src="./icon/capture.png" alt="Step 3" />
+              <img src="./icon/capture.png" alt="Step 3" /> 
               <p><strong>3.</strong> Capture clear photos of both.</p>
             </div>
             <div className="step fade-in delay-3">

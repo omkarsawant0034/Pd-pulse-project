@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState, createContext } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../firebase/config';
-import './AuthContext.css'; // 👈 Create this CSS file
+import './AuthContext.css'; 
 
 const AuthContext = createContext();
 
