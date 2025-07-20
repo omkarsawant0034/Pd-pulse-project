@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Home.css';
 
 const Home = () => {
@@ -12,9 +13,9 @@ const Home = () => {
           <p className="lead mt-3">
             Empowering lives with AI-powered Parkinson's Prediction and Care.
           </p>
-          <a href="/prediction" className="btn btn-outline-light btn-lg mt-5">
-            Predict Now
-          </a>
+          <Link to="/prediction" className="btn btn-outline-light btn-lg mt-5">
+              Predict Now
+          </Link>
         </div>
       </div>
     </div>
